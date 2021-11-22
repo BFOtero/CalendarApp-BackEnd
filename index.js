@@ -3,7 +3,6 @@ require('dotenv').config();
 
 const {server , db} = require('./config');
 const { port } = server;
-const { url } = db;
 const { dbConnection } = require('./database/config')
 
 
@@ -12,7 +11,7 @@ const { dbConnection } = require('./database/config')
 const app = express();
 
 // Base de datos 
-dbConnection(url);
+dbConnection();
 
 // Directorio publico
 app.use( express.static('public') );
