@@ -17,6 +17,7 @@
     "express-validator": "^6.13.0",
     "install": "^0.13.0",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
     "mongoose": "^6.0.12",
     "npm": "^8.1.3"
   }
