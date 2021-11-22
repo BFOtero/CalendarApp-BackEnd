@@ -4,11 +4,7 @@ const { url } = db;
 
 const dbConnection = async() => {
     try{ 
-        await mongoose.connect( url , {
-            useNewUrlParser: true, 
-            useUnifiedTopology: true,
-            useCreateIndex: true
-        })
+        await mongoose.connect( url )
         console.log('DB online')
     }catch (error) {
         console.log(error)
